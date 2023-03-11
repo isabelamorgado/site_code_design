@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construção Site Completo Code Design</title>
+    <link rel="stylesheet" href="estilo.css ">
+</head>
+<body>
+        
+    <div id="principal"><!--INÍCIO DIV PRINCIPAL-->
+        <div id="topo"><!--INÍCIO DIV TOPO-->            
+            <div id="logo"><!--INÍCIO DIV LOGO-->                
+                <a href="index.html" target="_self"><img src="imagens/code.png" alt="Descrição da imagem" title="Logotipo empresa CodeDesign"></img></a>
+            </div><!--FIM DIV LOGO-->            
+            <div id="slogan"><!--INÍCIO DIV SLOGAN-->
+                Code Design, Web acessível para todos!!!
+            </div><!--FIM DIV SLOGAN-->
+        </div><!--FIM DIV TOPO-->
+        <div id="menu"><!--INÍCIO DIV MENU-->
+
+            <ul id="navegacao">
+                <li><a href="index.html"target="_self" class="linkmenu">HOME</a></li>
+                <li><a href="empresa.html"target="_self" class="linkmenu">EMPRESA</a></li>
+                <li><a href="servicos.html"target="_self" class="linkmenu">SERVIÇOS</a></li>
+                <li><a href="portfolio.html"target="_self" class="linkmenu">PORTFÓLIO</a></li>
+                <li><a href="contato.html"target="_self" class="linkmenu">CONTATO</a></li>
+            </ul>
+
+        </div><!--FIM DIV MENU-->
+        <div id="conteudo"><!--INÍCIO DIV CONTEÚDO-->
+            <h1 class="titulop">Nossos Contatos</h1>         
+            
+            <div id="form"><!--INÍCIO DIV FORM-->
+                <h3>Fale Conosco</h3>
+
+                <form action="" method="get"><!--INÍCIO DO FORMULÁRIO-->
+                    
+                    <fieldset class="dados"><!--INÍCIO FIELDSET (DADOS PESSOAIS)-->
+                        <legend>Dados Pessoais</legend>
+                        <label for="nome" class="rotulo">Nome:</label>
+                        <input type="text" class="box" id="nome" name="nome" required placeholder="Digite nome completo"> <!--(MENSAGEM DE EXIBIÇÃO NAS CAIXAS DE TEXTO)-->
+                        <br>
+                        <label for="email" class="rotulo">Email:</label>
+                        <input type="email" class="box" id="email" name="email" required placeholder="Digite um email válido">
+                        <br>
+                        <p>Sexo: </p>
+                        <label for="sexo">
+                            <input type="radio" name="sexo" id="sexof">Feminino
+                        </label>
+                        <br>                                                
+                        <label for="sexo">
+                            <input type="radio" name="sexo" id="sexom">Masculino
+                        </label>
+                        <br>                        
+                        <label for="radio">
+                            <input type="radio" name="sexo" id="sexooutro">Outro
+                        </label>
+                        <p>Assuntos de interesse?</p>  
+                        <label for="interesse">
+                            <input type="checkbox" name="interesse" id="desktop">Desenvolvimento Desktop
+                        </label>
+                        <br>                        
+                        <label for="interesse">
+                            <input type="checkbox" name="interesse" id="web">Desenvolvimento WEB
+                        </label>
+                        <br>                        
+                        <label for="interesse">
+                            <input type="checkbox" name="interesse" id="bd">Banco de Dados
+                        </label>
+                        <br>                        
+                        <label for="interesse">
+                            <input type="checkbox" name="interesse" id="site">Desenvolvimento Site
+                        </label>
+                        <br>                        
+                        <label for="interesse">
+                            <input type="checkbox" name="interesse" id="mobile">Desenvolvimento Mobile
+                        </label>           
+                    </fieldset><!--FIM DO FIELDSET (DADOS PESSOAIS)-->                    
+                    <fieldset class="dados"><!--INÍCIO DO FIELDSET (MENSAGEM)-->
+                        <legend>Mensagem</legend>
+                        <label class="rotulo" for="assunto">Assunto
+                            <select name="assunto" class="box">
+                                <option>Selecione...</option>
+                                <option value="duvidas">Dúvidas</option>
+                                <option value="criticas">Críticas</option>
+                                <option value="sugestoes">Sugestões</option>
+                                <option value="elogios">Elogios</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                            <br>
+                            <div class="clearfix"></div>
+                        </label>
+                        <br>
+                        <div class="clearfix"></div>
+                        <br>
+                        <br>
+                        <p>Mensagem: </p>
+                        <label class="rotulo msg" id="texto" for="mensagem"></label>
+                        <textarea class="textoform" name="mensagem" required placeholder="Digite a mensagem"></textarea>
+                    </fieldset><!--FIM DO FIELDSET (MENSAGEM)-->
+                    <br>
+                    <input type="button" id="button" value="Enviar">                    
+                </form><!--FIM DO FORMULÁRIO-->
+                <br>
+                <br>
+                <br>            
+            </div><!--FIM DIV FORM-->
+
+            <div id="mapa"><!--INÍCIO DIV MAPA-->
+                <h3>Localização</h3>            
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.9923817392187!2d-47.6477758844217!3d-22.728524537249772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c631a09ac7b2e1%3A0x197834b105f878e3!2sSenac%20Piracicaba!5e0!3m2!1spt-BR!2sbr!4v1665426422229!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            </div><!--FIM DIV MAPA-->
+        </div><!--FIM DIV CONTEÚDO-->
+
+        <div class="clearfix"></div> <!--DIV CLEAR FIX (LIMPAR POSSÍVEIS BUGS DE ELEMENTOS FLUTUANTES (FLOAT))-->
+
+        <div id="rodape"><!--INÍCIO DIV RODAPÉ-->
+            <div id="copy"><!--INÍCIO DIV COPY-->
+                &copy;Copyright 2022 - Code Design - Todos os direitos reservados
+            </div><!--FIM DIV COPY-->            
+            <div id="creditos"><!--INÍCIO DIV CRÉDITO-->
+                Site desenvolvido por: <a href="#" target="_blank" class="linkcredito" >Isabela</a>
+            </div><!--FIM DIV CRÉDITO-->
+        </div><!--FIM DIV RODAPÉ-->
+    </div><!--FIM DIV PRINCIPAL-->
+</body>
+</html>

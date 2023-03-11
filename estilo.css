@@ -1,0 +1,288 @@
+@charset "utf-8";
+/*INDEX - HOME*/
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(225, 166, 67, 0.7);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify; /*ALINHAMENTO DE TEXTO*/
+}
+#principal
+{
+    width: 1180px; /*DESCONTAR 20PX DO PADDING*/
+    height: auto;
+    background: rgba(255, 255, 255, 0.50);
+    margin: 0 auto;
+    padding: 10px; /*TODA VEZ QUE USAR MARGIM E PADDING TEM QUE DESCONTAR*/
+}
+#topo
+{
+    width: 100%; /*PREENCHER TODO O ESPAÇO*/
+    height: 150px;
+}
+#logo
+{
+    width: 200px;
+    height: 150px;
+    float: left;
+}
+#slogan
+{
+    width: 490px;
+    height: 150px;
+    line-height: 150px;
+    float: right;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+#menu
+{
+    width: 100%;
+    height: 50px;
+    background: rgba(243, 242, 181, 1.00);
+    font-weight: bold;
+}
+#navegacao
+{
+    margin: 0;
+    padding: 0;
+}
+#navegacao li
+{
+    list-style: none;
+    float: left;
+}
+a.linkmenu:link, a.linkmenu:visited /*PARA MUDAR O COMPORTAMENTO (ESTÁGIOS) DA TAG A*/
+{
+    display: block; /*BOTÃO - CAIXA DE TEXTO*/
+    width: 234px; /*DIV 1180PX*/
+    height: 48px;
+    background: rgba(244, 141, 9, 1.00);
+    text-align: center;
+    line-height: 48px;
+    text-decoration: none; /*TIRAR O SUBLINHADO DO LINK*/
+    color: rgba(249, 249, 249, 1.00);
+    border: 1px rgba(134, 64, 3, 1.00) dashed; /*LINHA PONTILHADA*/
+}
+a.linkmenu:hover, a.linkmenu:active
+{
+    background: rgba(251, 81, 5, 1.00);
+    color: rgba(0, 0, 0, 1.00);
+}
+#conteudo
+{
+    width: 1160px;
+    min-height: 330px;
+    background: rgba(249, 225, 189, 1.00);
+    padding: 10px;
+}
+#rodape
+{
+    width: 100%;
+    height: 50px;
+    background: rgba(244, 151, 9, 1.00);
+    color: rgba(255, 255, 255, 1.00);
+}
+#copy
+{
+    width: 570px;
+    height: 30px;
+    padding: 10px;
+    float: left;
+    text-align: left;
+    line-height: 30px; /*ALTURA DA CAIXA (CONTAINER)*/
+}
+#creditos
+{
+    width: 570px;
+    height: 30px;
+    padding: 10px;
+    float: right;
+    text-align: right;
+    line-height: 30px;
+}
+a.linkcredito:link, a.linkcredito:visited
+{
+    text-decoration: none;
+    color: rgba(253, 253, 253, 1.00);
+    font-weight: bold; 
+}
+a.linkcredito:hover, a.linkcredito:active
+{
+    color: rgba(0, 0, 0, 1.00);
+}
+.titulop /*CENTRALIZAR O TEXTO PRINCIPAL*/
+{
+    text-align: center;
+}
+.esquerda /*CENTRALIZAR ELEMENTOS PARA A ESQUERDA*/
+{
+    float: left;
+    text-align: left justify;
+    padding: 5px;
+}
+.marginr10 /*MARGEM DIREITA*/
+{
+    margin-right: 10px;
+}
+
+/*EMPRESA* - NOSSOS ESPECIALISTAS*/
+.qs /*(QUEM SOMOS)*/
+{    
+    width: 400px;
+    height: auto;
+    background: rgba(255, 255, 255, 1.00);
+    padding: 80px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.especialistas /*(NOSSOS ESPECIALISTAS)*/
+{
+    width: 600px;
+    height: 115px;
+    float: left;
+    background: rgba(255, 153, 58, 0.555);
+}
+.direita /*(DIRECIONAR ELEMENTOS PARA A DIREITA)*/
+{
+    float: left;
+    padding: 14px;
+    margin-bottom: 5px;
+}
+.conteudocss /*(DIVISÃO DAS DUAS DIV's DENTRO DA DIV CONTEÚDO)*/
+{
+    width: 42%;
+    min-height: 300px;
+}
+
+/*SERVIÇOS* - NOSSOS SERVIÇOS*/
+.servicos
+{
+    width: 1140px;
+    height: auto;
+    background: rgba(255, 255, 255, 1.00);
+    padding: 10px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.subtitulo /*CENTRALIZAR O SUBTÍTULO*/
+{
+    text-align: center;
+}
+.clearfix
+{
+    clear: both; /*LIMPAR A FLUTUAÇÃO HERDADA DE AMBOS OS LADOS*/
+}
+.botao /*BOTÃO "SAIBA MAIS"*/
+{    
+    background: orange;
+    float: right;
+    text-decoration: none;
+    color: white;
+    margin-top: -45px;
+    padding: 10px;
+    font-size: 10px;
+}
+#miniaturas /*DIV MINIATURAS (SEQUÊNCIA DE FOTOS)*/
+{
+    width: 225px;
+    height: 600px;
+    overflow: auto; /*BARRA DE ROLAGEM HORIZONTAL OU VERTICAL*/
+}
+#galeria iframe /*DIV IMAGEM EM EXIBIÇÃO*/
+{
+    width: 935px;
+    height: 600px;
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+}
+
+/*CONTATOS*/
+
+#form
+{
+    width: 570px;
+    min-height: 400px;
+    float: left;
+}
+#mapa
+{
+    width: 570px;
+    min-height: 400px;
+    float: right;
+    padding-bottom: 20px;
+}
+#mapa iframe
+{
+    width: 570px;
+    min-height: 700px;
+    padding-top: 10px;
+    float: right;
+    border-radius: 5px;
+}
+#form h3, #mapa h3
+{
+    margin: 0;
+}
+.dados
+{
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.rotulo
+{
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+.box
+{
+    display: block;
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(181, 181, 181, 0.5);
+    border: 0;
+    border-radius: 5px;
+    color: rgb(68, 67, 67);
+}
+#button
+{
+    width: 100px;
+    height: 30px;
+    border: 1;   
+    display: block;
+    float: left;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.textoform
+{
+    width: 300px;
+    height: 80px;
+    line-height: 30px;
+    background-color: rgba(181, 181, 181, 0.5);
+    border: 0;
+    float: left;
+    border-radius: 5px;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.msg
+{
+    width: 100px;
+    height: 150px;
+    line-height: 30px;
+    float: right;
+}
