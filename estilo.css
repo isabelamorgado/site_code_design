@@ -14,7 +14,7 @@ body
     height: auto;
     background: rgba(255, 255, 255, 0.50);
     margin: 0 auto;
-    padding: 10px; /*TODA VEZ QUE USAR MARGIM E PADDING TEM QUE DESCONTAR*/
+    padding: 10px; /*TODA VEZ QUE USAR MARGIN E PADDING TEM QUE DESCONTAR*/
 }
 #topo
 {
